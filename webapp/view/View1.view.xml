@@ -1,0 +1,41 @@
+<mvc:View controllerName="fourtrust.teste20.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"  
+    >
+    <Page id="page" title="{i18n>title}">
+       <content>
+          <VBox class="sapUiSmallMargin">
+            <f:SimpleForm id="SimpleFormDisplay354"
+              editable="false"
+              layout="ResponsiveGridLayout"
+              title="User Info"
+              labelSpanXL="3"
+              labelSpanL="3"
+              labelSpanM="3"
+              labelSpanS="12"
+              adjustLabelSpan="false"
+              emptySpanXL="4"
+              emptySpanL="4"
+              emptySpanM="4"
+              emptySpanS="0"
+              columnsXL="1"
+              columnsL="1"
+              columnsM="1"
+              singleContainerFullSize="false" >
+              <f:content>
+                <Label text="First Name" />
+                <Text text="{userInfo>/firstname}" />
+                <Label text="Last Name" />
+                <Text text="{userInfo>/lastname}" />
+                <Label text="Email" />
+                <Text text="{userInfo>/email}" />
+                <Label text="Display Name" />
+                <Text text="{userInfo>/displayName}" />                                                
+              </f:content>
+            </f:SimpleForm>
+          </VBox>
+        </content>
+    </Page>
+</mvc:View>
